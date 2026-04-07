@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Scope of variable
+        </title>
+    </head>
+    <body>
+        <h1>Scope of Variable in Function</h1>
+        <button onclick="myfunction()">Click Me!</button>
+        <p id="p5"></p>
+        <p id="p6"></p>
+        <script>
+            var x=9;
+            function myfunction(){
+                var y=6;
+                document.getElementById("p5").innerHTML=x * y;
+            }
+            document.getElementById("p6").innerHTML= x;
+        </script>
+    </body>
+</html>
